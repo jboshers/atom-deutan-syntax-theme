@@ -1,0 +1,14 @@
+// comment
+@import "test/test";
+.test {
+  @extend .testing;
+  $var = "top #{ total }";
+  @if ($var == true){
+    @content;
+  }
+  text-decoration: overline;
+  text-transform: capitalize;
+  font-size: 1rem;
+  @include test($test: false);
+  @include test($test = false);
+}
